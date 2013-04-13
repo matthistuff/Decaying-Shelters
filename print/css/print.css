@@ -1,0 +1,241 @@
+@page {
+  size: A4 landscape;
+  padding: 1.5cm 0 2cm 0;
+  margin: 0;
+  prince-bleed: 3mm;
+  marks: none;
+  prince-background-image-resolution: 300dpi;
+  prince-image-resolution: 300dpi;
+  @bottom-right {
+    margin: 0 6.65cm 2cm 0;
+    content: counter(page);
+    text-align: right;
+    font-size: 10pt;
+    font-family: "Gentium Basic", serif; } }
+
+@page :first {
+  @bottom-right {
+    content: normal; } }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Gentium Basic", serif;
+  font-size: 11pt;
+  line-height: 1.4; }
+
+ul, ol, li {
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  margin: 0;
+  page-break-after: avoid; }
+
+h2, h3, h4, h5, h6 {
+  margin-left: -7.5mm; }
+
+h1 {
+  font-weight: 300;
+  font-size: 32pt;
+  margin-bottom: 1em; }
+
+h2 {
+  page-break-after: avoid;
+  margin-bottom: 1em;
+  font-size: 18pt;
+  prince-bookmark-level: 1; }
+
+p.last-p:after {
+  content: "⁂";
+  margin: 1em auto 2em auto;
+  display: block;
+  font-size: 18pt;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4); }
+
+h3 {
+  margin-top: 2em;
+  margin-bottom: .75em;
+  font-size: 16pt;
+  prince-bookmark-level: 2; }
+
+h4 {
+  font-size: 14pt;
+  margin-top: 2em;
+  margin-bottom: .75em;
+  prince-bookmark-level: 3; }
+
+h5 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 11pt;
+  prince-bookmark-level: 4; }
+
+h6 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 10pt;
+  prince-bookmark-level: 5; }
+
+p {
+  hyphens: auto;
+  prince-hyphenate-patterns: url(hyph-de-1996.pat);
+  prince-hyphenate-lines: 2;
+  prince-hyphenate-after: 3;
+  prince-hyphenate-before: 3;
+  orphans: 3;
+  widows: 3;
+  text-align: justify;
+  prince-text-justify: prince-cjk;
+  margin: 0 0 1em 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+figure {
+  margin: 0 0 2.5mm 0;
+  width: 10.3cm; }
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+figcaption {
+  padding-top: 2.5mm;
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h5, h6, p, ul, ol {
+  padding-left: 17.8cm;
+  width: 10.3cm; }
+
+#einleitung, #danksagung, #eidesstattlicheerklrung, #vorbemerkungen, #produktion, #zumsystemdesentwurfs {
+  page-break-before: always; }
+
+#danksagung {
+  margin-top: 0; }
+
+#front-page, #front-page p {
+  text-align: center; }
+
+#front-page h1, #front-page h2, #front-page h3 {
+  margin-left: 0; }
+
+#front-page h3 {
+  font-size: 12pt;
+  margin-top: 5em; }
+
+#front-page ul {
+  list-style-type: none; }
+
+#toc {
+  list-style-type: none; }
+
+#toc ol {
+  padding-left: 0;
+  list-style-type: none;
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 1px rgba(0, 0, 0, 0.2) solid; }
+
+#toc li {
+  margin-left: 5mm;
+  margin-bottom: .125em; }
+
+#toc > li {
+  font-weight: bold;
+  margin-left: 0;
+  margin-bottom: .25em; }
+
+#toc > li li {
+  font-weight: normal; }
+
+#toc a:before {
+  display: block;
+  float: right;
+  text-align: right;
+  content: target-counter(attr(href), page); }
+
+#fn\:5 {
+  margin-top: .5em; }
+
+#fn\:9 {
+  margin-top: 13.5em; }
+
+#fn\:10 {
+  margin-top: 1em; }
+
+img.half-width {
+  width: 60%; }
+
+.float-left {
+  float: left;
+  margin-left: 1.5cm;
+  width: 10.3cm; }
+
+.float-left h2, .float-left h3, .float-left p {
+  padding-left: 0; }
+
+.aside {
+  float: left;
+  margin-left: -16.3cm;
+  width: 10.3cm;
+  font-size: 10pt;
+  prince-linebreak-magic: auto; }
+
+.aside p {
+  text-align: left; }
+
+.footnote {
+  margin-left: .125em;
+  font-size: 9pt;
+  vertical-align: top; }
+
+.footnote-content {
+  width: 10.3cm;
+  margin-bottom: 2.5mm; }
+
+.footnote-content a {
+  text-align: left; }
+
+.footnote-content a:after {
+  content: "(" attr(href) ")";
+  margin-left: .25em; }
+
+.footnote-content p {
+  padding: 0;
+  margin: 0; }
+
+.footnote-content .counter {
+  margin-right: .25em; }
+
+.reversefootnote, div.footnotes {
+  display: none; }
+
+@media print {
+  #knick {
+    display: none; } }
+@media screen {
+  html {
+    background: rgba(0, 0, 0, 0.2); }
+
+  body {
+    width: 29.6cm;
+    margin: 0 auto;
+    background: white; }
+
+  #knick {
+    position: fixed;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    top: 0;
+    bottom: 0;
+    left: 50%; } }

@@ -1,0 +1,13 @@
+$margin-top: 1.5cm;
+$margin-bottom: 2cm;
+$margin-inner: 3cm;
+$margin-outer: 1.5cm;
+
+$page-width: 14.8cm;
+$page-height: 21cm;
+
+$right-margin: $page-width + $margin-inner;
+$right-width: $page-width - ($margin-inner + $margin-outer);
+
+$left-width: $right-width;
+$left-margin: - (2 * $margin-inner + $left-width);

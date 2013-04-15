@@ -1,6 +1,6 @@
 $ ->
 	## Header
-	$('#decayingshelters').before '<header><ul><li><a href="https://github.com/matthiasbreuer/Decaying-Shelters">Downloads</a></li><li><a href="https://github.com/matthiasbreuer/Decaying-Shelters/blob/master/print/pdf/decaying-shelters.pdf">Druckversion (pdf)</a></li></ul></header>'
+	$('#decayingshelters').before '<header><ul><li><a href="https://github.com/matthiasbreuer/Decaying-Shelters">Downloads</a></li><li><a href="https://github.com/matthiasbreuer/Decaying-Shelters/blob/master/print/pdf/decaying-shelters.pdf?raw=true">Druckversion (pdf)</a></li></ul></header>'
 
 	## Arrange
 	$('#decayingshelters').nextUntil('#danksagung').remove()

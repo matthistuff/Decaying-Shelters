@@ -3,7 +3,8 @@
   var traverseTOC;
 
   $(function() {
-    var caption, figure, heading, img, imgs, index, li, next, toc, _i, _j, _len, _len1;
+    var caption, colorOpts, figure, heading, img, imgs, index, li, next, toc, _i, _j, _len, _len1;
+    $('#decayingshelters').before('<header><ul><li><a href="https://github.com/matthiasbreuer/Decaying-Shelters">Downloads</a></li><li><a href="https://github.com/matthiasbreuer/Decaying-Shelters/blob/master/print/pdf/decaying-shelters.pdf">Druckversion (pdf)</a></li></ul></header>');
     $('#decayingshelters').nextUntil('#danksagung').remove();
     $('#decayingshelters').after('<iframe src="http://player.vimeo.com/video/63610774" width="100%" height="340" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
     $('#hinweis').nextUntil('#inhaltsverzeichnis').remove();
@@ -15,10 +16,17 @@
       img = imgs[_i];
       img = $(img);
       figure = (img.wrap('<figure></figure>')).parent();
+      img.wrap('<a href="' + img.attr('src').replace('images/', 'images-full/') + '"></a>');
       caption = $('<figcaption></figcaption>');
       caption.html(img.attr('title'));
       figure.append(caption);
     }
+    colorOpts = {
+      scalePhotos: true,
+      maxWidth: '90%',
+      maxHeight: '100%'
+    };
+    $('figure a').colorbox(colorOpts);
     index = $('#inhaltsverzeichnis');
     toc = $('<ol id="toc"></ol>');
     index.after(toc);

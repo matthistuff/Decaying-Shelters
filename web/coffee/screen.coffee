@@ -1,4 +1,7 @@
 $ ->
+	## Header
+	$('#decayingshelters').before '<header><ul><li><a href="https://github.com/matthiasbreuer/Decaying-Shelters">Downloads</a></li><li><a href="https://github.com/matthiasbreuer/Decaying-Shelters/blob/master/print/pdf/decaying-shelters.pdf">Druckversion (pdf)</a></li></ul></header>'
+
 	## Arrange
 	$('#decayingshelters').nextUntil('#danksagung').remove()
 
@@ -15,11 +18,20 @@ $ ->
 	for img in imgs
 		img = $ img
 		figure = (img.wrap '<figure></figure>').parent()
+		img.wrap '<a href="' + img.attr('src').replace('images/',
+			'images-full/') + '"></a>'
 
 		caption = $ '<figcaption></figcaption>'
 		caption.html (img.attr 'title')
 
 		figure.append caption
+
+	colorOpts =
+		scalePhotos: true
+		maxWidth   : '90%'
+		maxHeight  : '100%'
+
+	$('figure a').colorbox(colorOpts)
 
 	## TOC
 	index = $ '#inhaltsverzeichnis'

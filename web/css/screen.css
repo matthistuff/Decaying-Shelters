@@ -353,6 +353,24 @@ ul, ol, li {
   padding: 0;
   margin: 0; }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px; }
+
+header ul {
+  list-style-type: none;
+  background: silver;
+  margin: 0 auto; }
+
+header ul li {
+  display: inline-block; }
+
+header ul li a {
+  line-height: 40px;
+  padding: 0 10px 0 10px; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 200;
@@ -408,7 +426,7 @@ a {
 figure {
   width: 50%;
   float: right;
-  margin: 1em 0 1em 1em; }
+  margin: 0 0 1em 1em; }
 
 figure img {
   width: 100%;

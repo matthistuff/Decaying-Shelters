@@ -31,7 +31,7 @@ Sie sollten ergänzend zur Lektüre der Druckversion genutzt werden.
 ## Inhaltsverzeichnis
 
 ## Einleitung
-![Shelter]Das Projekt *Decaying Shelters* (zu Deutsch etwa „verrottende Zufluchstorte“) beschäftigt sich mit dem Entwurf temporärer Behausungen, die sich dynamisch in den Standort und seine Umgebung einfügen. Jede Behausung ist hinsichtlich ihrer Konstruktion und Materialwahl so konzipiert, dass sie einerseits leicht zu transportieren und aufzubauen ist, anderseits nach ihrer Nutzung am Standort zurückgelassen werden kann und verrottet.
+![Shelter]Das Projekt *Decaying Shelters* (zu Deutsch etwa „verrottende Zufluchtsorte“) beschäftigt sich mit dem Entwurf temporärer Behausungen, die sich dynamisch in den Standort und seine Umgebung einfügen. Jede Behausung ist hinsichtlich ihrer Konstruktion und Materialwahl so konzipiert, dass sie einerseits leicht zu transportieren und aufzubauen ist, anderseits nach ihrer Nutzung am Standort zurückgelassen werden kann und verrottet.
 
 [Shelter]: images/shelter.png
 	"Eine generierte Behausung"
